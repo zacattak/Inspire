@@ -1,5 +1,4 @@
 import { AccountController } from "./controllers/AccountController.js";
-import { HomeController } from "./controllers/HomeController.js";
 import { ImageController } from "./controllers/ImageController.js";
 import { AuthGuard } from "./services/AuthService.js";
 import { Router } from "./utils/Router.js";
@@ -9,19 +8,10 @@ export const router = new Router([
   {
     path: '',
     controllers: [ImageController],
-    view: /*html*/`
-    <div class="bg-white p-3">
-      <div class="card-body">
-        <p>Home Page</p>
-        <button class="btn btn-dark" onclick="app.HomeController.testButton()">😎</button>
-      </div>
-    </div>
-    `
+    view: ''
+
   },
-  {
-    path: '#/about',
-    view: 'app/views/AboutView.html'
-  },
+
   {
     path: '#/account',
     middleware: [AuthGuard],

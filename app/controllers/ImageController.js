@@ -1,6 +1,9 @@
 import { AppState } from "../AppState.js";
 import { imageService } from "../services/ImageService.js";
 import { Pop } from "../utils/Pop.js"
+import { setHTML } from "../utils/Writer.js";
+
+
 
 export class ImageController {
     constructor() {
@@ -15,5 +18,9 @@ export class ImageController {
             Pop.error(error)
             console.error(error)
         }
+    }
+
+    setActiveImage(imageQuery) {
+        imageService.setActiveImage(imageQuery)
     }
 }
