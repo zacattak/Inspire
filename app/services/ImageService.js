@@ -6,6 +6,9 @@ class ImageService {
     async getImage() {
         const response = await api.get('api/images')
         console.log('got image', response.data)
+        const newImage = new Image(response.data)
+        console.log('new image', newImage);
+        AppState.image = newImage
     }
 
     setActiveImage(imageQuery) {
