@@ -9,12 +9,10 @@ export class Image {
 
     get InfoCardHTMLTemplate() {
         return `   
-         <div class="info-card">
+        <div class="info-card">
         <h1>${this.quote}</h1>
         <h2 class="magic-time">time placeholder</h2>
-        <div class="hidden-details>
-        <h2>${this.author}</h2>
-        </div>
+        <div class="hidden-details"> <h2>${this.author}</h2></div>
       </div>
         `
     }
