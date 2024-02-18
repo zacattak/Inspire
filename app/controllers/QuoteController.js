@@ -6,7 +6,7 @@ import { setHTML } from "../utils/Writer.js";
 function _drawQuote() {
     const quote = AppState.quote
 
-    let htmlString = ''
+    // let htmlString = ''
     // quote.forEach(quote => htmlString += quote.CardHTMLTemplate)
     setHTML('quoteInfo', quote.InfoCardHTMLTemplate)
 }
