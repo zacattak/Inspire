@@ -3,7 +3,20 @@ export class Image {
         this.query = data.query
         this.author = data.author
         this.largeImgUrl = data.largeImgUrl
+        this.quote = data.quote
 
+    }
+
+    get InfoCardHTMLTemplate() {
+        return `   
+         <div class="info-card">
+        <h1>${this.quote}</h1>
+        <h2 class="magic-time">time placeholder</h2>
+        <div class="hidden-details>
+        <h2>${this.author}</h2>
+        </div>
+      </div>
+        `
     }
 }
 
