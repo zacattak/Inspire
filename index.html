@@ -19,7 +19,31 @@
   <!-- SECTION -->
   <header>
 
-    <h1 class="text-center">Inspire</h1>
+    <h3 class="text-center info-card">
+
+      <!-- <button class="btn btn-white" id="offcanvas" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        ToDos
+      </button> -->
+      <button class="btn btn-dark m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">ToDos</button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">ToDo List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="container-fluid">
+            <section id="myImagesList" class="row">
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+    </h3>
 
 
     <div class="flex-grow-1 justify-content-end align-items-center d-flex" id="authstate"></div>
