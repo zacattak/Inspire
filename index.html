@@ -32,6 +32,7 @@
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">ToDo List</h5>
+          <h5 id="checkedCount"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -45,10 +46,10 @@
               <form onsubmit="app.ToDoController.createToDo()">
 
                 <div>
-                  <label for="toDo">ToDo</label>
-                  <input id="toDo" type="text">
-
+                  <label for="description">ToDo</label>
+                  <input id="description" name="description" type="text">
                 </div>
+                <button class="btn btn-dark mt-2" type="submit">Submit</button>
 
 
               </form>

@@ -10,7 +10,7 @@ class ObservableAppState extends EventEmitter {
   /**@type {import('./models/Account.js').Account | null} */
   account = null
 
-  toDo = null
+  // toDo = null
 
   toDos = []
 

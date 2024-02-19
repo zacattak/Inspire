@@ -1,5 +1,6 @@
 export class ToDo {
     constructor(data) {
+        this.id = data.id
         this.completed = data.completed
         this.description = data.description
         this.creatorId = data.creatorId
@@ -8,8 +9,14 @@ export class ToDo {
     get ListButtonHTMLTemplate() {
         return `
         <div class="mb-2">
-        <button class="btn btn-info w-75">${this.creatorId}</button>
-      </div>
+        <button onclick="app.ToDoController.updateToDo('${this.id}')" ${this.completed ? 'disabled' : ''} class="btn btn-primary">
+        ✅ 
+        </button>
+        <h2>  ${this.description}   </h2>
+        <button onclick="app.ToDoController.destroyToDo('${this.id}')" class="btn btn-danger ">
+        Delete </button>
+        </div>
         `
     }
 }
+
