@@ -1,4 +1,4 @@
-import { todoService } from "../services/TodoService.js"
+import { toDoService } from "../services/TodoService.js"
 import { Pop } from "../utils/Pop.js"
 
 export class TodoController {
@@ -6,9 +6,9 @@ export class TodoController {
         console.log('To do controller loaded');
     }
 
-    async createImage() {
+    async createToDo() {
         try {
-            await todoService.createTodo()
+            await toDoService.createToDo()
         } catch (error) {
             console.error(error);
             Pop.error(error)

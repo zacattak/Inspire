@@ -1,7 +1,10 @@
-class TodoService {
-    createTodo() {
+import { AppState } from "../AppState.js"
+import { ToDo } from "../models/ToDo.js"
+
+class ToDoService {
+    createToDo() {
         throw new Error("Method not implemented")
     }
 }
 
-export const todoService = new TodoService()
+export const toDoService = new ToDoService()
