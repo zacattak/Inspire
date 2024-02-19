@@ -1,9 +1,16 @@
 import { AppState } from "../AppState.js"
 import { ToDo } from "../models/ToDo.js"
+import { api } from "./AxiosService.js"
 
 class ToDoService {
-    createToDo() {
-        throw new Error("Method not implemented")
+    async getToDo() {
+
+        const response = await api.get('api/todos')
+        console.log('got todo', response.data);
+
+        const newToDo = new ToDo(response.data)
+        AppState.toDo = newToDo
+
     }
 }
 
