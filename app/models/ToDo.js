@@ -8,7 +8,7 @@ export class ToDo {
     get ListButtonHTMLTemplate() {
         return `
         <div class="mb-2">
-        <button class="btn btn-info w-75">${this.description}</button>
+        <button class="btn btn-info w-75">${this.creatorId}</button>
       </div>
         `
     }

@@ -1,7 +1,7 @@
 import { AccountController } from "./controllers/AccountController.js";
 import { ImageController } from "./controllers/ImageController.js";
 import { QuoteController } from "./controllers/QuoteController.js";
-import { ToDoController } from "./controllers/ToDoController.js"
+import { ToDoController } from "./controllers/ToDoController.js";
 import { AuthGuard } from "./services/AuthService.js";
 import { Router } from "./utils/Router.js";
 

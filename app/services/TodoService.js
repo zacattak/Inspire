@@ -12,6 +12,10 @@ class ToDoService {
         AppState.toDo = newToDo
 
     }
+    setActiveToDo(toDoCreatorId) {
+        const activeToDo = AppState.toDo.find(toDo => toDo.creatorId == toDoCreatorId)
+        AppState.toDo = activeToDo
+    }
 }
 
 export const toDoService = new ToDoService()
